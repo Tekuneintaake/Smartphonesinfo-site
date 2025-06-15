@@ -1,26 +1,31 @@
-SmartphonesInfo-site
+---
+title: "Best Budget Smartphones for Gaming in 2025"
+date: 2025-06-15
+description: "Discover top-performing budget smartphones perfect for mobile gaming."
+tags: ["budget phones", "gaming", "smartphones", "2025"]
+---
 
-Welcome to the official website for SmartphonesInfo.org.
+# Best Budget Smartphones for Gaming in 2025
 
-This site was created to help people make better smartphone buying decisions. It includes honest reviews, comparisons, and practical advice for finding the best phone within your budget.
+Gaming on a budget doesn’t mean sacrificing performance. Here are some of the best budget-friendly smartphones in 2025 that deliver smooth gameplay without breaking the bank.
 
-What's on the site
+## 1. Phone Model A  
+- Powerful processor for gaming  
+- High refresh rate display  
+- Long battery life  
 
-- Smartphone reviews based on real-world use
-- Buying guides for different price ranges
-- Tips on what features to look for
-- Content focused on value, not hype
+## 2. Phone Model B  
+- Affordable price  
+- Great GPU performance  
+- Efficient cooling system  
 
-Built with
+## 3. Phone Model C  
+- Optimized software for gaming  
+- Crisp visuals and sound  
+- Solid RAM and storage options  
 
-- Simple HTML and CSS
-- Hosted using Cloudflare Pages
-- Google Analytics for visitor tracking
+Choose the one that fits your budget and start gaming on the go!
 
-Website
+---
 
-You can view the website at: [https://smartphonesinfo.org](https://smartphonesinfo.org)
-
-About
-
-This project is maintained by Tekuneintaake. If you have any suggestions or would like to contribute, you're welcome to get in touch or fork the repo.
+*Note: Prices and availability may vary by region.*
