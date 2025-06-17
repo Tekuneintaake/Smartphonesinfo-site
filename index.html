@@ -1,93 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Smartphone Specifications Guide</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        nav {
-            margin: 0.5rem 0;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        section {
-            padding: 2rem;
-            background: #fff;
-            margin: 2rem auto;
-            width: 80%;
+            line-height: 1.6;
+            color: #333;
             max-width: 800px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            padding: 20px;
         }
-        footer {
-            text-align: center;
-            padding: 1rem 0;
-            background: #333;
-            color: #fff;
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .spec-section {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .spec-title {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .tip {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-left: 3px solid #3498db;
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>SMARTPHONE PRE-PURCHASE ADVICE</h1>
+        <nav>
+            <a href="#basics">Spec Basics</a> |
+            <a href="#processor">Processor</a> |
+            <a href="#memory">Memory</a> |
+            <a href="#storage">Storage</a> |
+            <a href="#camera">Camera</a> |
+            <a href="#battery">Battery</a> |
+            <a href="#screen">Screen</a>
+        </nav>
+    </header>
 
-<header>
-    <h1>Welcome to My Website</h1>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section id="about">
-    <h2>About Us</h2>
-    <p>We are a team of dedicated professionals committed to providing the best services to our clients.</p>
-</section>
-
-<section id="services">
-    <h2>Our Services</h2>
-    <ul>
-        <li>Web Development</li>
-        <li>Graphic Design</li>
-        <li>SEO Services</li>
-    </ul>
-</section>
-
-<section id="contact">
-    <h2>Contact Us</h2>
-    <form action="#" method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+    <section id="basics">
+        <h2>SMARTPHONE SPECIFICATIONS</h2>
+        <p><span class="spec-title">What are smartphone specifications and why they matter</span></p>
+        <p>Smartphone specifications are like the special features of a phone that tell you how good it is. They include things like the size of the screen, the power of the camera, how fast the phone works, and how much storage it has for apps and pictures. Just like a superhero has powers, smartphones have specifications that make them better at doing certain things.</p>
         
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+        <div class="tip">
+            <p><span class="spec-title">Knowing smartphone specifications</span> is super important because it will help you figure out what phone suits your needs best. For example, if you love watching videos, you'd want a phone with a big screen and great sound. But if you just want to call your friends, you can go for a simpler phone that doesn't cost as much.</p>
+        </div>
+    </section>
 
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+    <section id="processor" class="spec-section">
+        <h2>Brain (Processor)</h2>
+        <p>Just like your brain helps you think and solve problems, a smartphone's processor (also called a "chip" or "CPU") is its brain! The faster the processor, the quicker your phone can run games, load videos, and switch between apps.</p>
+        
+        <p><span class="spec-title">Some phones</span> have dual-core or octa-core processors - this just means how many "brains" are working together. More cores help with tough tasks, like editing photos or playing 3D games.</p>
+    </section>
 
-        <input type="submit" value="Send">
-    </form>
-</section>
+    <!-- Continue with other sections (RAM, Storage, Camera, etc.) -->
+    <!-- Add the rest of your content following the same structure -->
 
-<footer>
-    <p>&copy; 2025 My Website. All Rights Reserved.</p>
-</footer>
-
+    <footer>
+        <p>© 2023 Smartphone Specifications Guide. All rights reserved.</p>
+    </footer>
 </body>
 </html>
