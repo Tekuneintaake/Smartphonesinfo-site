@@ -418,6 +418,89 @@
     <p><a href="#">Back to Top</a></p>
   </div>
 </footer>
+
+   <!-- Dropdown Footer Sections -->
+<div class="dropdown-section">
+  <button class="dropdown-btn" onclick="toggleDropdown('guide-dropdown')">
+    Smartphone Buying Guide ▶
+  </button>
+  <div class="dropdown-content" id="guide-dropdown">
+    <div class="guide-grid">
+      <a href="/processor" class="grid-item">Processor</a>
+      <a href="/memory" class="grid-item">Memory</a>
+      <a href="/storage" class="grid-item">Storage</a>
+      <a href="/camera" class="grid-item">Camera</a>
+      <a href="/battery" class="grid-item">Battery</a>
+      <a href="/screen" class="grid-item">Screen</a>
+    </div>
+  </div>
+</div>
+
+<div class="dropdown-section">
+  <button class="dropdown-btn" onclick="toggleDropdown('policy-dropdown')">
+    Legal & Contact ▶
+  </button>
+  <div class="dropdown-content" id="policy-dropdown">
+    <div class="policy-links">
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy-policy.html">Privacy</a>
+      <a href="/disclaimer.html">Disclaimer</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Dropdown Styles */
+  .dropdown-btn {
+    background: #f5f5f5;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+  }
+  .dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: white;
+  }
+  .dropdown-content.open {
+    max-height: 500px;
+    padding: 15px;
+  }
+  .guide-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .grid-item {
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .policy-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+</style>
+
+<script>
+  function toggleDropdown(id) {
+    const dropdown = document.getElementById(id);
+    dropdown.classList.toggle('open');
+    const btn = dropdown.previousElementSibling;
+    btn.innerHTML = btn.innerHTML.includes('▼') 
+      ? btn.innerHTML.replace('▼', '▶') 
+      : btn.innerHTML.replace('▶', '▼');
+  }
+</script>
+    
 </body>
                 </html>
             
