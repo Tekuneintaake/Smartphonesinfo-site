@@ -1,11 +1,8 @@
-# SmartphonesInfo.org - Website Source Code  
+# SmartphonesInfo.org - Website Source  
+Official codebase for [SmartphonesInfo.org](https://www.smartphonesinfo.org) | *Dofollow Link*  
 
-Official website: [SmartphonesInfo.org](https://www.smartphonesinfo.org)  
-A resource for expert smartphone comparisons, reviews, and buying guides.  
+## Features  
+- Static HTML/CSS for fast performance  
+- Integrated smartphone dataset ([view data repo](https://github.com/Tekuneintaake/smartphonesinfo))  
 
-## Project Details  
-- Built with HTML/CSS for fast performance  
-- Mobile-optimized design  
-- Dataset sourced from [our analytics repo](https://github.com/Tekuneintaake/smartphonesinfo-site)
-
-- 
+© 2025 Smartphone Specs Guide. [Back to Top](#top)  
