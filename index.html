@@ -450,51 +450,66 @@
   </div>
 </div>
 
+<!-- Add this before </body> in your HTML files -->
+<div class="dropdown-footer">
+  <button class="dropdown-btn" onclick="toggleDropdown('legal-dropdown')">
+    Legal & Contact ▶
+  </button>
+  <div class="dropdown-content" id="legal-dropdown">
+    <div class="footer-links">
+      <a href="about.html">About Page</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="terms-conditions.html">Terms & Conditions</a>
+    </div>
+  </div>
+</div>
+
 <style>
-  /* Dropdown Styles */
+  /* Minimal dropdown styles */
   .dropdown-btn {
-    background: #f5f5f5;
+    background: #f0f0f0;
     border: none;
-    padding: 12px;
+    padding: 12px 20px;
     width: 100%;
     text-align: left;
     font-size: 16px;
     cursor: pointer;
-    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
   }
   .dropdown-content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
-    background: white;
+    background: #fafafa;
   }
   .dropdown-content.open {
-    max-height: 500px;
+    max-height: 200px;
     padding: 15px;
   }
-  .guide-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  .footer-links {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
   }
-  .grid-item {
-    padding: 10px;
-    background: #f9f9f9;
-    border-radius: 5px;
-    text-align: center;
+  .footer-links a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 0;
   }
-  .policy-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+  .footer-links a:hover {
+    text-decoration: underline;
   }
 </style>
 
 <script>
   function toggleDropdown(id) {
     const dropdown = document.getElementById(id);
-    dropdown.classList.toggle('open');
     const btn = dropdown.previousElementSibling;
+    dropdown.classList.toggle('open');
     btn.innerHTML = btn.innerHTML.includes('▼') 
       ? btn.innerHTML.replace('▼', '▶') 
       : btn.innerHTML.replace('▶', '▼');
