@@ -350,6 +350,73 @@
         <p>© 2025 Smartphone Specs Guide. All rights reserved.</p>
         <p><a href="#home" style="color: #3498db;">Back to Top</a></p>
     </footer>
+
+    <!-- Add this before </body> in your HTML files -->
+<div class="dropdown-footer">
+  <button class="dropdown-btn" onclick="toggleDropdown('legal-dropdown')">
+    Legal & Contact ▶
+  </button>
+  <div class="dropdown-content" id="legal-dropdown">
+    <div class="footer-links">
+      <a href="about.html">About Page</a>
+      <a href="contact.html">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="terms-conditions.html">Terms & Conditions</a>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Minimal dropdown styles */
+  .dropdown-btn {
+    background: #f0f0f0;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+  }
+  .dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background: #fafafa;
+  }
+  .dropdown-content.open {
+    max-height: 200px;
+    padding: 15px;
+  }
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-links a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 0;
+  }
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  function toggleDropdown(id) {
+    const dropdown = document.getElementById(id);
+    const btn = dropdown.previousElementSibling;
+    dropdown.classList.toggle('open');
+    btn.innerHTML = btn.innerHTML.includes('▼') 
+      ? btn.innerHTML.replace('▼', '▶') 
+      : btn.innerHTML.replace('▶', '▼');
+  }
+</script>
+    
 </body>
         </html>
             
