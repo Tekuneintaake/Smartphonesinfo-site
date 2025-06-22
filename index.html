@@ -419,6 +419,66 @@
       : btn.innerHTML.replace('▶', '▼');
   }
 </script>
+
+    <!-- Add this ABOVE your legal dropdown section -->
+<div class="dropdown-footer">
+  <button class="dropdown-btn" onclick="toggleDropdown('share-dropdown')">
+    Share This Page ▶
+  </button>
+  <div class="dropdown-content" id="share-dropdown">
+    <div class="social-share">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=[YOUR-URL]" target="_blank" class="social-btn facebook">
+        Facebook
+      </a>
+      <a href="https://twitter.com/intent/tweet?url=[YOUR-URL]&text=Check%20this%20out" target="_blank" class="social-btn twitter">
+        Twitter
+      </a>
+      <a href="https://www.linkedin.com/shareArticle?mini=true&url=[YOUR-URL]" target="_blank" class="social-btn linkedin">
+        LinkedIn
+      </a>
+      <a href="mailto:?body=Check%20this%20out:%20[YOUR-URL]" class="social-btn email">
+        Email
+      </a>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Social Share Styles */
+  .social-share {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 5px;
+  }
+  .social-btn {
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .facebook { background: #3b5998; }
+  .twitter { background: #1da1f2; }
+  .linkedin { background: #0077b5; }
+  .email { background: #666; }
+  .social-btn:hover {
+    opacity: 0.9;
+  }
+</style>
+
+<script>
+  // Auto-fill current page URL
+  document.addEventListener('DOMContentLoaded', function() {
+    const currentUrl = encodeURIComponent(window.location.href);
+    const shareLinks = document.querySelectorAll('.social-share a');
+    
+    shareLinks.forEach(link => {
+      link.href = link.href.replace('[YOUR-URL]', currentUrl);
+    });
+  });
+</script>
     
 </body>
         </html>
