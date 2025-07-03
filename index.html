@@ -238,9 +238,25 @@
   height: 48px;
 }
 
-/* Hover state adjustment */
-.social-btn.weibo:hover svg path {
-  transform: scale(3.3); /* Slightly larger on hover */
+/* Weibo Button - 50% Larger Logo */
+.weibo {
+  background-color: #E6162D; /* Keep original red */
+  overflow: visible; /* Allows logo to expand */
+}
+
+.weibo svg {
+  width: 32px; /* Maintains button size */
+  height: 32px;
+}
+
+.weibo svg path {
+  transform: scale(1.5); /* 50% enlargement */
+  transform-origin: center;
+  transition: transform 0.2s ease;
+}
+
+.weibo:hover svg path {
+  transform: scale(1.6); /* Slightly larger on hover */
 }
         </style>
     <!-- Google tag (gtag.js) -->
