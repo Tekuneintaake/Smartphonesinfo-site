@@ -219,44 +219,29 @@
   height: 16px;
 }
 
-/* Platform-specific colors - Verified brand colors */
-.facebook { background-color: #1877f2; } /* Facebook Blue */
-.twitter { background-color: #1da1f2; } /* Twitter Blue */
-.linkedin { background-color: #0077b5; } /* LinkedIn Blue */
-.reddit { background-color: #ff4500; } /* Reddit Orange */
-.email { background-color: #777777; } /* Email Gray */
-.whatsapp { background-color: #25D366; } /* WhatsApp Green */
-.pinterest { background-color: #E60023; } /* Pinterest Red */
-.tiktok { background-color: #000000; } /* TikTok Black */
-.tumblr { background-color: #35465C; } /* Tumblr Blue */
-.weibo { background-color: #E6162D; } /* Weibo Red (corrected) */
+/* Platform Colors - Including Chinese Social */
+.facebook { background-color: #1877f2; }
+.twitter { background-color: #1da1f2; }
+.linkedin { background-color: #0077b5; }
+.reddit { background-color: #ff4500; }
+.email { background-color: #777; }
+.whatsapp { background-color: #25D366; }
+.pinterest { background-color: #E60023; }
+.tiktok { background-color: #000000; }
+.tumblr { background-color: #35465C; }
+.weibo { background-color: #E6162D; }  /* Weibo (Sina Weibo) */
+.qq { background-color: #12B7F5; }    /* QQ (Tencent QQ) */
+.wechat { background-color: #07C160; } /* WeChat (Weixin) */
 
-/* Enhanced Mobile Responsiveness */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
-  .social-share-bar {
-    justify-content: center;
-    gap: 6px;
-  }
-  
   .social-btn {
-    width: 28px; /* Slightly smaller on mobile */
+    width: 28px;
     height: 28px;
   }
-  
   .social-btn svg {
     width: 14px;
     height: 14px;
-  }
-  
-  /* Stack on very small screens */
-  @media (max-width: 480px) {
-    .social-share-bar {
-      flex-direction: column;
-      align-items: center;
-    }
-    .share-label {
-      margin-bottom: 8px;
-    }
   }
 }
         </style>
