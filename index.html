@@ -219,44 +219,20 @@
         justify-content: center;
     }
         }
-        /* Targets ONLY the Weibo logo inside existing buttons */
+        /* Original Weibo Button CSS (Proven Working Version) */
+.social-btn.weibo {
+  background-color: #E6162D; /* Weibo's official red */
+}
+
 .social-btn.weibo svg {
-  position: relative;
-  overflow: visible;
+  width: 16px; /* Original icon size */
+  height: 16px;
 }
 
-.social-btn.weibo svg path {
-  transform: scale(3); /* 300% enlargement */
-  transform-origin: center;
-  display: block;
-}
-
-/* Compensate for positioning */
-.social-btn.weibo svg {
-  margin: -8px; /* Counteracts the enlarged logo */
-  width: 48px; /* Allows overflow */
-  height: 48px;
-}
-
-/* Weibo Button - 50% Larger Logo */
-.weibo {
-  background-color: #E6162D; /* Keep original red */
-  overflow: visible; /* Allows logo to expand */
-}
-
-.weibo svg {
-  width: 32px; /* Maintains button size */
-  height: 32px;
-}
-
-.weibo svg path {
-  transform: scale(1.5); /* 50% enlargement */
-  transform-origin: center;
-  transition: transform 0.2s ease;
-}
-
-.weibo:hover svg path {
-  transform: scale(1.6); /* Slightly larger on hover */
+/* Standard hover effect (matches other buttons) */
+.social-btn.weibo:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
 }
         </style>
     <!-- Google tag (gtag.js) -->
