@@ -219,10 +219,29 @@
         justify-content: center;
     }
         }
-        /* Chinese Social Media Colors */
-.wechat { background-color: #07C160; }
-.weibo { background-color: #E6162D; }
-.qq { background-color: #12B7F5; }
+        /* Targets ONLY the Weibo logo inside existing buttons */
+.social-btn.weibo svg {
+  position: relative;
+  overflow: visible;
+}
+
+.social-btn.weibo svg path {
+  transform: scale(3); /* 300% enlargement */
+  transform-origin: center;
+  display: block;
+}
+
+/* Compensate for positioning */
+.social-btn.weibo svg {
+  margin: -8px; /* Counteracts the enlarged logo */
+  width: 48px; /* Allows overflow */
+  height: 48px;
+}
+
+/* Hover state adjustment */
+.social-btn.weibo:hover svg path {
+  transform: scale(3.3); /* Slightly larger on hover */
+}
         </style>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8VFJYBHX6N"></script>
