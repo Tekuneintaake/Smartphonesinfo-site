@@ -270,6 +270,28 @@
             <a href="/infinix-hot-40-pro.html">Infinix Hot 40 Pro</a>
             <a href="/galaxy.html">Galaxy</a>
         </nav>
+        <style type="text/css">
+  .mobileShow {display: none;}
+
+  /* Smartphone Portrait and Landscape */
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){ 
+      .mobileShow {display: inline;}
+  }
+  .mobileHide { display: inline; }
+
+  /* Smartphone Portrait and Landscape */
+  @media only screen
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){
+     .mobileHide { display: none;}
+  }
+</style>
+
+<div class="mobileShow"> Your code snippet for mobile </div>
+
+<div class="mobileHide"> Code snippet for desktop only </div>
     </header>
 
     <section id="home" class="spec-section">
