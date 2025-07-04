@@ -258,7 +258,37 @@
     <header>
         <h1>How To Decide What Phone To Buy 🔥</h1>
         <p>Understand phone specifications in simple terms and make the perfect choice for your needs 🇰🇮</p>
-        
+        <style type="text/css">
+/* Default: Hidden on all devices */
+.mobileShow { display: none; }
+/* Default: Visible on all devices */
+.mobileHide { display: block; }
+
+/* Mobile devices (portrait) */
+@media only screen and (max-width: 480px) {
+  .mobileShow { display: block; }
+  .mobileHide { display: none; }
+}
+
+/* Small devices (portrait tablets, large phones, 481px and up) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  /* Adjust as needed - keeps mobileHide visible by default */
+  /* Add specific styles here if needed */
+}
+
+/* Tablets (landscape, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Tablet-specific styles if needed */
+}
+
+/* Desktop (1025px and up) */
+@media only screen and (min-width: 1025px) {
+  /* Desktop-specific styles if needed */
+}
+</style>
+
+<div class="mobileShow">Content visible ONLY on mobile (≤480px)</div>
+<div class="mobileHide">Content visible on all devices EXCEPT mobile (≤480px)</div>
 </script>
 <script type="text/javascript" src="//www.highperformanceformat.com/3758697cbf76a36b3b86c40bf1e59810/invoke.js"></script>
         <nav>
