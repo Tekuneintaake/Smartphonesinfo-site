@@ -752,17 +752,43 @@ Budget vs Flagship Phones in 2025: The Real Difference<strong> 3+ million views 
   }
 </style>
 
-<script>
-  function toggleDropdown(id) {
-    const dropdown = document.getElementById(id);
-    const btn = dropdown.previousElementSibling;
-    dropdown.classList.toggle('open');
-    btn.innerHTML = btn.innerHTML.includes('▼') 
-      ? btn.innerHTML.replace('▼', '▶') 
-      : btn.innerHTML.replace('▶', '▼');
+<!-- Replace the entire dropdown-footer section with this: -->
+<div class="footer-legal">
+  <h4>Legal & Contact</h4>
+  <div class="footer-links">
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="disclaimer.html">Disclaimer</a>
+    <a href="terms.html">Terms</a>
+  </div>
+</div>
+
+<style>
+  .footer-legal {
+    padding: 15px;
+    background: #f8f8f8;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
   }
-  
-</script>  
+  .footer-legal h4 {
+    margin: 0 0 10px 0;
+    color: #333;
+  }
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-links a {
+    color: #555;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+</style>
 </body>
 </html>
 
