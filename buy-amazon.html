@@ -48,4 +48,99 @@
         }
         .price-comparison th, .price-comparison td {
             border: 1px solid #ddd;
-            padding
+            padding: 10px;
+            text-align: left;
+        }
+        .price-comparison th {
+            background: #0066cc;
+            color: white;
+        }
+        .buy-button {
+            display: inline-block;
+            background: #ff9900; /* Amazon orange */
+            color: #fff;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .bestbuy-button { background: #003b64; } /* Best Buy blue */
+        .walmart-button { background: #007dc6; } /* Walmart blue */
+        .ebay-button { background: #e53238; } /* eBay red */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">SmartphonesInfo.org</div>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/reviews">Reviews</a>
+            <a href="/smartphone-store">Deals Store</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Smartphone Deals Store (2025)</h1>
+        <p>Compare prices and exclusive discounts across trusted retailers:</p>
+
+        <!-- Retailer Banners (Logos or Promo Images) -->
+        <div class="retailer-section">
+            <a href="#amazon">
+                <img src="images/banners/amazon-banner.jpg" alt="Amazon Smartphone Deals" class="retailer-banner">
+            </a>
+            <a href="#bestbuy">
+                <img src="images/banners/bestbuy-banner.jpg" alt="Best Buy Smartphone Deals" class="retailer-banner">
+            </a>
+        </div>
+
+        <!-- Top Phone Comparisons -->
+        <h2 id="top-deals">Today’s Best Deals</h2>
+        <table class="price-comparison">
+            <tr>
+                <th>Phone Model</th>
+                <th>Amazon</th>
+                <th>Best Buy</th>
+                <th>Walmart</th>
+            </tr>
+            <tr>
+                <td>Samsung Galaxy S25 Ultra</td>
+                <td>$1,199 <a href="[AMAZON_LINK]" class="buy-button">Buy</a></td>
+                <td>$1,249 <a href="[BESTBUY_LINK]" class="buy-button bestbuy-button">Buy</a></td>
+                <td>$1,229 <a href="[WALMART_LINK]" class="buy-button walmart-button">Buy</a></td>
+            </tr>
+            <tr>
+                <td>iPhone 16 (128GB)</td>
+                <td>$799 <a href="[AMAZON_LINK]" class="buy-button">Buy</a></td>
+                <td>$819 <a href="[BESTBUY_LINK]" class="buy-button bestbuy-button">Buy</a></td>
+                <td>$795 <a href="[WALMART_LINK]" class="buy-button walmart-button">Buy</a></td>
+            </tr>
+        </table>
+
+        <!-- Retailer-Specific Sections -->
+        <h2 id="amazon">Amazon Deals</h2>
+        <div class="phone-card">
+            <h3>Google Pixel 9a</h3>
+            <p><strong>Price:</strong> $499 (Prime Exclusive)</p>
+            <p><strong>Why Buy?</strong> Best budget Android phone with AI camera.</p>
+            <a href="[AMAZON_LINK]" class="buy-button">View on Amazon</a>
+        </div>
+
+        <h2 id="bestbuy">Best Buy Deals</h2>
+        <div class="phone-card">
+            <h3>OnePlus 13</h3>
+            <p><strong>Price:</strong> $899 (Free Geek Squad Protection)</p>
+            <p><strong>Why Buy?</strong> In-store pickup + free warranty.</p>
+            <a href="[BESTBUY_LINK]" class="buy-button bestbuy-button">View on Best Buy</a>
+        </div>
+
+        <!-- Trust Badge & Disclosure -->
+        <div class="disclosure">
+            <p><strong>Note:</strong> Prices update daily. We earn a commission if you purchase through our links (at no extra cost to you). <a href="/privacy">Privacy Policy</a>.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SmartphonesInfo.org</p>
+    </footer>
+</body>
+</html>
