@@ -267,12 +267,26 @@
       
       
       
-      
-      
-      
-      
-      
-      
+<!-- Amazon Store Banner with Heading and Responsive Image -->
+<div class="amazon-store-header">
+  <h1>Amazon Shopping Store</h1>
+  <p class="subtitle">Your trusted source for deals on smartphones, electronics, and more</p>
+</div>
+
+<div class="amazon-banner-container">
+  <a href="https://www.amazon.com/s?k=smartphones&tag=smartphonei00-20" 
+     target="_blank" 
+     rel="noopener noreferrer"
+     title="Shop Smartphones on Amazon">
+    <img 
+      src="images/Screenshot_20250707-144038.jpg" 
+      alt="Best Smartphone Deals on Amazon" 
+      class="amazon-banner"
+      loading="lazy"
+    >
+  </a>
+  <span class="disclaimer">Click on the image ⬆️ to view and shop</span>
+</div>
 
 <style>
   .amazon-store-header {
@@ -284,44 +298,61 @@
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
-  
+
   .amazon-store-header h1 {
     margin: 0;
     font-size: 2.2rem;
     font-weight: 700;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   }
-  
+
   .subtitle {
     margin: 8px 0 0;
     font-size: 1.1rem;
     opacity: 0.9;
   }
 
-  /* Mobile responsiveness */
+  .amazon-banner-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .amazon-banner {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .disclaimer {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+
   @media (max-width: 768px) {
     .amazon-store-header h1 {
       font-size: 1.8rem;
     }
+
     .subtitle {
       font-size: 1rem;
     }
+
+    .disclaimer {
+      font-size: 0.85rem;
+    }
   }
 </style>
+      
+      
+      
+      
+      
+      
 
-<div class="amazon-banner-container">
-  <a href="https://www.amazon.com/s?k=smartphones&tag=smartphonei00-20" 
-     target="_blank" 
-     rel="noopener noreferrer"
-     title="Shop Smartphones on Amazon">
-    <img 
-      src="images/Screenshot_20250707-144038.jpg" 
-      alt="Best Smartphone Deals on Amazon" 
-      class="amazon-banner"
-    >
-  </a>
-  <span class="disclaimer">Click on the image ⬆️ to view and shop</span>
-</div>
+
     <footer>
         <p><a href="https://www.smartphonesinfo.org" style="color: #3498db;">Back to Home Page</a></p>
         <p>&copy; 2025 SmartphonesInfo.org</p>
