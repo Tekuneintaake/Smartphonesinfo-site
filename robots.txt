@@ -1,12 +1,11 @@
 User-agent: *
 Allow: /
+
 Disallow: /private/
 Disallow: /tmp/
 Disallow: /admin/
 Disallow: /search/
 Disallow: /*.json$
-Disallow: /*.xml$  # Except sitemap.xml
+# Disallow: /*.xml$  ← Removed this to allow sitemap.xml
 
 Sitemap: https://www.smartphonesinfo.org/sitemap.xml
-
-# Crawl-delay: 10  # Uncomment if you get too much bot traffic
