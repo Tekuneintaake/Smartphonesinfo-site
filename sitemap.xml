@@ -1,28 +1,19 @@
-<loc>https://www.smartphonesinfo.org/cdn-cgi/l/email-protection/</loc>
-<priority>0.1</priority>
-</url>
-<url>
-<loc>https://www.smartphonesinfo.org/</loc>
-<priority>0.1</priority>
-</url>
-<url>
-<loc>https://www.smartphonesinfo.org/cdn-cgi/l/email-protection/</loc>
-<priority>0.1</priority>
-</url>
-<url>
-<loc>https://www.smartphonesinfo.org/cdn-cgi/l/email-protection/</loc>
-<priority>0.1</priority>
-</url>
-<url>
-<loc>https://www.smartphonesinfo.org/cdn-cgi/l/email-protection/</loc>
-<priority>0.1</priority>
-</url>
-<url>
-<loc>https://www.smartphonesinfo.org/index.html/</loc>
-<priority>0.1</priority>
-</url>
-<url>
-<loc>https://www.smartphonesinfo.org/cdn-cgi/l/email-protection/</loc>
-<priority>0.1</priority>
-</url>
-</urlset>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 - Page Not Found</title>
+  <style>
+    body { font-family: sans-serif; background: #f2f2f2; text-align: center; padding: 50px; }
+    h1 { font-size: 48px; margin-bottom: 10px; }
+    p { font-size: 18px; }
+    a { color: #007bff; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <h1>404</h1>
+  <p>Oops! The page you're looking for doesn't exist.</p>
+  <p><a href="/">Return to Homepage</a></p>
+</body>
+</html>
