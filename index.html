@@ -158,6 +158,30 @@
   <p class="lead">Lost your iPhone or planning to buy one? You're in the right place. Choose the help you need below.</p>
 </header>
 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  
+  .social-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
+  
+  .facebook { background: #3b5998; }
+  .twitter { background: #1da1f2; }
+  .linkedin { background: #0077b5; }
+  .email { background: #666; }
+  
+  @media (max-width: 600px) {
+    .social-share-bar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  
 <section class="path">
   <h2>🔍 I lost my iPhone</h2>
   <p>If your iPhone is lost or stolen, we’ll help you track it, secure your data, and guide you on what to do next. Learn how to use iCloud, Lost Mode, and Activation Lock the right way.</p>
@@ -462,29 +486,7 @@
   .social-btn {
     width: 36px;
     height: 36px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.2s, opacity 0.2s;
-  }
-  
-  .social-btn:hover {
-    transform: translateY(-2px);
-    opacity: 0.9;
-  }
-  
-  .facebook { background: #3b5998; }
-  .twitter { background: #1da1f2; }
-  .linkedin { background: #0077b5; }
-  .email { background: #666; }
-  
-  @media (max-width: 600px) {
-    .social-share-bar {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  }
+
 
 <footer>
   <p>
