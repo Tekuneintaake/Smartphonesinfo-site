@@ -22,6 +22,42 @@
 
 
   <style>
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff; /* or any color matching your design */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db; /* Change color to match your brand */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+.loading-text {
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+    
     body {
       font-family: Arial, sans-serif;
       background: #f4f7f9;
@@ -157,6 +193,12 @@
   </style>
 </head>
 <body>
+
+  <div class="preloader">
+    <div class="loader"></div>
+    <!-- Optional: Add loading text -->
+    <div class="loading-text">Loading...</div>
+</div>
 
 <header>
   <h1>Find My iPhone: iCloud track my iPhone</h1>
@@ -523,5 +565,15 @@ According to internal Apple community polls, over <strong>64%</strong> of recove
   &copy; 2025 SmartphonesInfo. All rights reserved.
 </footer>
 
+<script>
+    window.addEventListener('load', function() {
+        const preloader = document.querySelector('.preloader');
+        preloader.style.opacity = '0';
+        setTimeout(() => {
+            preloader.style.display = 'none';
+        }, 500); // Match this with the CSS transition time
+    });
+</script>
+  
 </body>
 </html>
