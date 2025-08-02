@@ -211,8 +211,11 @@
 </header>
 
   🔥🔥🔥🔥🔥🔥🔥
-  <nav aria-label="Site Map" class="emoji-sitemap">
+<nav aria-label="Site Map" class="emoji-sitemap">
   <ul>
+    <!-- Root/Main Page (🏠) -->
+    <li>🏠 <a href="/">Home</a></li>
+    
     <!-- Main Pages (📄 = File) -->
     <li>📄 <a href="/about-us">about-us</a></li>
     <li>📄 <a href="/contact">contact</a></li>
@@ -241,10 +244,17 @@
   .emoji-sitemap {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    padding: 1em;
+    background: #f8f9fa; /* Light gray background */
+    border-radius: 8px;
   }
   .emoji-sitemap ul {
     list-style-type: none;
     padding-left: 1.2em;
+    margin: 0;
+  }
+  .emoji-sitemap li {
+    margin: 0.4em 0;
   }
   .emoji-sitemap a {
     text-decoration: none;
